@@ -91,3 +91,9 @@ createButton("Dismantle", UDim2.new(0, 10, 0.5, -100), Color3.fromRGB(255, 165, 
 		game:GetService("Players").LocalPlayer.Backpack.Dismantle.LocalScript.Event:FireServer()
 	end
 end)
+
+-- Botón Atomic (arriba derecha)
+createButton("I Am Atomic", UDim2.new(0.5, -250, 0, 10), Color3.fromRGB(255, 0, 255), function()
+
+game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("I Am Atomic").LocalScript.Event:FireServer()
+end)
